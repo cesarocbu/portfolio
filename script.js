@@ -4,3 +4,8 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+function openLink(url) {
+  window.open(url, '_blank');
+}
+

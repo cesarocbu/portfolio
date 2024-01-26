@@ -60,13 +60,14 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="openLink('https://www.linkedin.com/in/cesarocbu/')"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="openLink('https://github.com/cesarocbu')"
+            target="_blank"
           />
         </div>
       </div>
@@ -275,7 +276,7 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/cesarocbu/portfolio'"
+                onclick="openLink('https://github.com/cesarocbu/portfolio')"
               >
                 Github
               </button>
@@ -293,13 +294,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/cesarocbu/pomodoroTimer'"
+                onclick="openLink('https://github.com/cesarocbu/pomodoroTimer')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://cesarocbu.github.io/pomodoroTimer/'"
+                onclick="openLink('https://cesarocbu.github.io/pomodoroTimer/')"
               >
                 Live Demo
               </button>
@@ -317,13 +318,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/cesarocbu/curso-frontend-developer-JSpractico'"
+                onclick="openLink('https://github.com/cesarocbu/curso-frontend-developer-JSpractico')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://cesarocbu.github.io/curso-frontend-developer-JSpractico/'"
+                onclick="openLink('https://cesarocbu.github.io/curso-frontend-developer-JSpractico/')"
               >
                 Live Demo
               </button>
@@ -341,13 +342,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/cesarocbu/clonGoogle'"
+                onclick="openLink('https://github.com/cesarocbu/clonGoogle')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://cesarocbu.github.io/clonGoogle/'"
+                onclick="openLink('https://cesarocbu.github.io/clonGoogle/')"
               >
                 Live Demo
               </button>
@@ -372,7 +373,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:cesar.ocbu@gmail.com">cesar.ocbu@gmail.com</a></p>
+          <p><a onclick="openLink('mailto:cesar.ocbu@gmail.com')">cesar.ocbu@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -380,7 +381,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/cesarocbu">LinkedIn</a></p>
+          <p><a onclick="openLink('https://www.linkedin.com/in/cesarocbu/')">LinkedIn</a></p>
         </div>
       </div>
     </section>
