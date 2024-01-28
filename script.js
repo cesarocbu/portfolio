@@ -10,7 +10,7 @@ function openLink(url) {
 }
 
 /* CONSOLE EFFECT FOR NAME*/
-consoleText(['Cesar Ochoa.'], 'text',['black']);
+consoleText(['Cesar Ochoa'], 'text',['black']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

@@ -88,8 +88,11 @@
     flex-direction: column;
     text-align: center;
     margin-right: 30px;
+    list-style: none;
   }
   .nav-links a{
+    text-decoration: none;
+    color: black;
     height: 1rem;
     margin: 0;
   }
@@ -106,5 +109,11 @@
   }
   .text-container {
     text-align: justify;
+  }
+}
+
+@media screen and (max-width: 375px){ 
+  .console-container {
+    font-size: 2rem;
   }
 }
