@@ -48,13 +48,13 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #contact,
   footer {
     height: 40vh;
   }
   #profile {
-    height: 83vh;
+    height: 80vh;
     margin-bottom: 0;
   }
   article {
@@ -64,6 +64,7 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
@@ -83,9 +84,14 @@
     font-size: 1.5rem;
   }
   .nav-links {
+    display: flex;
     flex-direction: column;
-    gap: 0rem;
     text-align: center;
+    margin-right: 30px;
+  }
+  .nav-links a{
+    height: 1rem;
+    margin: 0;
   }
   .section__pic-container {
     width: auto;
