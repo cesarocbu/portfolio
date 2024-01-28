@@ -1,5 +1,5 @@
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Roboto+Mono&display=swap');
 
 * {
   margin: 0;
@@ -203,6 +203,9 @@ section {
 }
 
 /* PROFILE SECTION */
+.hidden {
+  opacity:0;
+}
 
 #profile {
   display: flex;
@@ -251,13 +254,14 @@ section {
 /* CONSOLE EFFECT */
 
 .console-container {
+  font-family: 'Roboto Mono', monospace;
   font-size: 2.5rem;
   position: relative;
-  color:white;
+  color:black;
   font-weight: 1000;
   top:0;
   bottom:0;
-  left: 20px;
+  left: 0;
   right:0;
   margin:auto;
 }
