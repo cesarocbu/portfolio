@@ -11,6 +11,11 @@
   #projects {
     height: fit-content;
   }
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    left: 0px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -45,6 +50,11 @@
   }
   .about-containers {
     margin-top: 0;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    left: 0px;
   }
 }
 
@@ -109,6 +119,11 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    left: 15px;
   }
 }
 

@@ -10,387 +10,392 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo" style="font-size: smaller; color: gray;">(Beta)
-        <div class="logo" style="color: black;">Cesar Ochoa</div>
-      </div>
-      <div class="desktop">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo" style="font-size: smaller; color: gray;">(Beta)
-        <div class="logo" style="color: black">Cesar Ochoa</div>
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profilePic1.webp" alt="Cesar Ochoa profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
-        <br>
-        <p class="section__text__p2">Fullstack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Cesar_Ochoa_CV-en.pdf');"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.webp"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="openLink('https://www.linkedin.com/in/cesarocbu/')"
-          />
-          <img
-            src="./assets/github.webp"
-            alt="My Github profile"
-            class="icon"
-            onclick="openLink('https://github.com/cesarocbu')"
-            target="_blank"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/aboutPic.webp"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.webp"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ years <br />Fullstack Developer</p> 
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.webp"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Computer Science Bachelors Degree<br /></p>
-              <p>Electromechanical Technician Degree</p>
-            </div>
+    <main>
+      <div id="particles-js"></div>
+        <nav id="desktop-nav">
+          <div class="logo" style="font-size: smaller; color: gray;">(Beta)
+            <div class="logo" style="color: black;">Cesar Ochoa</div>
           </div>
-          <div class="text-container">
-            <p>
-              Still working on this... <br>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
+          <div class="desktop">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
+        </nav>
+      <nav id="hamburger-nav">
+        <div class="logo" style="font-size: smaller; color: gray;">(Beta)
+          <div class="logo" style="color: black">Cesar Ochoa</div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.webp"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1><br>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Fullstack Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/html-1.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/css-3.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/react-2.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/logo-javascript.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/typescript-2.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/nodejs-3.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/mongodb-icon-1.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/expressjs-icon.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/git-icon.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.webp"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse some of my</p>
-      <h1 class="title">Projects</h1>
-      <br>
-      <p class="section__text__p1">You can find more in my Github</p>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/portfolioSS.webp"
-                alt="This portfolio as a project"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Personal Portfolio</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="openLink('https://github.com/cesarocbu/portfolio')"
-              >
-                Github
-              </button>
-            </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/pomodoroSS.webp"
-                alt="Simple Pomodoro timer app"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Simple Pomodoro Timer</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="openLink('https://github.com/cesarocbu/pomodoroTimer')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="openLink('https://cesarocbu.github.io/pomodoroTimer/')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/storeSS.webp"
-                alt="Picture of the Online Store project"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Online store example (course)</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="openLink('https://github.com/cesarocbu/curso-frontend-developer-JSpractico')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="openLink('https://cesarocbu.github.io/curso-frontend-developer-JSpractico/')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/googleCloneSS.webp"
-                alt="A non/functional Google search clone page"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Google main page Clone</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="openLink('https://github.com/cesarocbu/clonGoogle')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="openLink('https://cesarocbu.github.io/clonGoogle/')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.webp"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.webp"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:cesar.ocbu@gmail.com" target="_blank">cesar.ocbu@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.webp"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/cesarocbu/" target="_blank">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav class="footer">
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
         </div>
       </nav>
-      <p>I'm still working on this portfolio. If you've seen a bug, report it <a href="mailto:cesar.ocbu@gmail.com" target="_blank"><strong>here.</strong></a></p> <br>
-      <p>Copyright &#169; 2023 cesarocbu All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/profilePic1.webp" alt="Cesar Ochoa profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+          <br>
+          <p class="section__text__p2">Fullstack Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Cesar_Ochoa_CV-en.pdf');"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.webp"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="openLink('https://www.linkedin.com/in/cesarocbu/')"
+            />
+            <img
+              src="./assets/github.webp"
+              alt="My Github profile"
+              class="icon"
+              onclick="openLink('https://github.com/cesarocbu')"
+              target="_blank"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/aboutPic.webp"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>1+ years <br />Fullstack Developer</p> 
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.webp"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Computer Science Bachelors Degree<br /></p>
+                <p>Electromechanical Technician Degree</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Still working on this... <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                reprehenderit et laborum, rem, dolore eum quod voluptate
+                exercitationem nobis, nihil esse debitis maxime facere minus sint
+                delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                reiciendis ea magnam? Nulla, impedit fuga!
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.webp"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1><br>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Fullstack Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/html-1.svg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/css-3.svg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/react-2.svg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/logo-javascript.svg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/typescript-2.svg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TypeScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/nodejs-3.svg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Node JS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/mongodb-icon-1.svg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MongoDB</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/expressjs-icon.svg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Express JS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/git-icon.svg"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.webp"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse some of my</p>
+        <h1 class="title">Projects</h1>
+        <br>
+        <p class="section__text__p1">You can find more in my Github</p>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/portfolioSS.webp"
+                  alt="This portfolio as a project"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Personal Portfolio</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="openLink('https://github.com/cesarocbu/portfolio')"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/pomodoroSS.webp"
+                  alt="Simple Pomodoro timer app"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Simple Pomodoro Timer</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="openLink('https://github.com/cesarocbu/pomodoroTimer')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="openLink('https://cesarocbu.github.io/pomodoroTimer/')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/storeSS.webp"
+                  alt="Picture of the Online Store project"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Online store example (course)</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="openLink('https://github.com/cesarocbu/curso-frontend-developer-JSpractico')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="openLink('https://cesarocbu.github.io/curso-frontend-developer-JSpractico/')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/googleCloneSS.webp"
+                  alt="A non/functional Google search clone page"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Google main page Clone</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="openLink('https://github.com/cesarocbu/clonGoogle')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="openLink('https://cesarocbu.github.io/clonGoogle/')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.webp"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.webp"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:cesar.ocbu@gmail.com" target="_blank">cesar.ocbu@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.webp"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/cesarocbu/" target="_blank">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav class="footer">
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>I'm still working on this portfolio. If you've seen a bug, report it <a href="mailto:cesar.ocbu@gmail.com" target="_blank"><strong>here.</strong></a></p> <br>
+        <p>Copyright &#169; 2023 cesarocbu All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+      <script src="particles.min.js"></script>
+      <script src="particlesjs-config.json"></script>
+    </body>
+    </main>
 </html>
