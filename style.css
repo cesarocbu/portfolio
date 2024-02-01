@@ -220,6 +220,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  z-index: 5;
 }
 
 #profile div{
@@ -515,7 +516,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 260vh;
+  height: 26vh;
   margin: 0 1rem;
 }
 
