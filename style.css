@@ -10,6 +10,16 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+input,
+textarea,
+button,
+select,
+li,
+span,
+div,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
 
 #particles-js{
   position: fixed;
@@ -19,6 +29,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 p {
@@ -146,7 +157,9 @@ ul {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -161,6 +174,7 @@ ul {
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
+  user-select: none;
 }
 
 .menu-links li {
@@ -474,6 +488,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  user-select: text;
 }
 
 .contact-info-upper-container {
