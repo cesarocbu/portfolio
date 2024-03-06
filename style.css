@@ -538,6 +538,13 @@ footer {
 footer p {
   text-align: center;
 }
+footer .credits{
+  font-size: 12px;
+}
+
+footer .credits a{
+  color: black;
+}
 
 .footer-info{
   z-index: 1;
