@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cesar Ochoa - Portfolio</title>
-    <link rel="shortcut icon" href="assets/terminal.svg">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <div id="particles-js"></div>
-    <main>
-        <nav id="desktop-nav">
-          <div class="logo" style="font-size: smaller; color: gray;">(Beta)
-            <div class="logo" style="color: black;">Cesar Ochoa</div>
-          </div>
-          <div class="desktop">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      <nav id="hamburger-nav">
-        <div class="logo" style="font-size: smaller; color: gray;">(Beta)
-          <div class="logo" style="color: black">Cesar Ochoa</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cesar Ochoa - Software Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Cesar Ochoa, a Software Engineer with 3+ years of experience in full-stack development, Java, Spring, React, and Node.js." />
+  <meta name="keywords" content="Cesar Ochoa, Software Engineer, Fullstack Developer, Web Developer, Java, React, Node.js, Portfolio" />
+  <meta name="author" content="Cesar Ochoa" />
+  <meta property="og:title" content="Cesar Ochoa - Software Engineer" />
+  <meta property="og:description" content="Explore my projects, experience, and skills in full-stack web development." />
+  <meta property="og:type" content="website" />
+  <link rel="shortcut icon" href="assets/terminal.svg">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <main>
+    <nav id="desktop-nav">
+      <div class="logo" style="font-size: smaller; color: gray;">(Beta)
+        <div class="logo" style="color: var(--text-color);">Cesar Ochoa</div>
+      </div>
+      <div class="desktop">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li style="cursor: pointer; display: flex; align-items: center;" onclick="toggleDarkMode()"
+            id="desktop-dark-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo" style="font-size: smaller; color: gray;">(Beta)
+        <div class="logo" style="color: var(--text-color)">Cesar Ochoa</div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div style="cursor: pointer; display: flex; align-items: center;" onclick="toggleDarkMode()"
+          id="mobile-dark-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
         </div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
@@ -42,18 +65,21 @@
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </div>
         </div>
-      </nav>
-      <section id="profile">
-        <div class="section__pic-container">
-          <img src="./assets/profilePic1.webp" alt="Cesar Ochoa profile picture" />
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profilePic_nobg.png" alt="Cesar Ochoa profile picture" id="profile-pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <div class='console-container'><span id='text'></span>
+          <div class='console-underscore' id='console'>&#95;</div>
         </div>
-        <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
-          <br>
-          <p class="section__text__p2">Fullstack Developer</p>
-          <div class="btn-container">
-            <!--
+        <br>
+        <p class="section__text__p2">Fullstack Developer</p>
+        <div class="btn-container">
+          <!--
             <button
               class="btn btn-color-2"
               onclick="window.open('./assets/Cesar_Ochoa_CV-en.pdf');"
@@ -61,348 +87,277 @@
               Download CV
             </button>
             -->
-            <button
-              class="btn btn-color-2"
-              onclick="openLink('https://cesarochoa-cv.netlify.app/');"
-            >
-              Web CV
-            </button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
-              Contact Info
-            </button>
-          </div>
-          <div id="socials-container">
-            <img
-              src="./assets/linkedin.webp"
-              alt="My LinkedIn profile"
-              class="icon"
-              onclick="openLink('https://www.linkedin.com/in/cesarocbu/')"
-            />
-            <img
-              src="./assets/github.webp"
-              alt="My Github profile"
-              class="icon"
-              onclick="openLink('https://github.com/cesarocbu')"
-              target="_blank"
-            />
-          </div>
+          <button class="btn btn-color-2" onclick="openLink('https://cesarochoa-cv.netlify.app/');">
+            Web CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-      </section>
-      <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="./assets/aboutPic.webp"
-              alt="Profile picture"
-              class="about-pic"
-            />
-          </div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./assets/experience.webp"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>Experience</h3>
-                <p>1+ years <br />Fullstack Developer</p> 
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/education.webp"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>Computer Science Bachelors Degree<br /></p>
-                <p>Electromechanical Technician Degree</p>
-              </div>
-            </div>
-            <div class="text-container">
-              <p>
-                Software Engineer with about two years of experience in Web Development, with solid knowledge in JavaScript, React and Node.js. I have participated in challenging projects that have allowed me to expand my knowledge and skills developing scalable and efficient web applications. I am excited to explore new possibilities where I can apply my experience and continue to improve as a Developer.
-              </p>
-            </div>
-          </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.webp" alt="My LinkedIn profile" class="icon"
+            onclick="openLink('https://www.linkedin.com/in/cesarocbu/')" />
+          <img src="./assets/github.webp" alt="My Github profile" class="icon"
+            onclick="openLink('https://github.com/cesarocbu')" target="_blank" />
         </div>
-        <img
-          src="./assets/arrow.webp"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-      </section>
-      <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Skills</h1><br>
-        <div class="experience-details-container">
+      </div>
+    </section>
+    <section id="about" class="fade-in">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+
+        <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <h2 class="experience-sub-title">Fullstack Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/html-1.svg"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/css-3.svg"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/react-2.svg"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>React</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/logo-javascript.svg"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/typescript-2.svg"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>TypeScript</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/nodejs-3.svg"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Node JS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/mongodb-icon-1.svg"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>MongoDB</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/expressjs-icon.svg"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Express JS</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/git-icon.svg"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Git</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
+              <img src="./assets/experience.webp" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>3+ Years as a Software Engineer<br />Currently @ Accenture (2 Yrs)</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.webp" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>Computer Science Bachelors Degree<br />Electromechanical Technician Degree</p>
+            </div>
+            <div class="details-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"
+                style="height: 2rem; width: 2rem; margin-bottom: 0.5rem;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+              </svg>
+              <h3>Languages</h3>
+              <p>English (C1)<br />Spanish (Native)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Software Engineer with 3+ years of experience in full-stack development and enterprise solutions. My professional background includes co-creating the official website for LaPrensa Florida. At Accenture, I have built robust customer loyalty systems for the hospitality sector, and I currently serve as a Support Engineer for a major banking project, specializing in Java and the Calypso platform. Alongside my corporate roles, I am actively developing a suite of innovative personal projects set to launch in the near future.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.webp" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience" class="fade-in">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1><br>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Fullstack Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/html-1.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/css-3.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/react-2.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/logo-javascript.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/typescript-2.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/nodejs-3.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/mongodb-icon-1.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/expressjs-icon.svg" alt="Express JS icon" class="icon invert-dark" />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/git-icon.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+                  alt="Vue icon" class="icon" />
+                <div>
+                  <h3>Vue</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                  alt="Java icon" class="icon" />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+                  alt="Spring icon" class="icon" />
+                <div>
+                  <h3>Spring</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  alt="Python icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-        <img
-          src="./assets/arrow.webp"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#projects'"
-        />
-      </section>
-      <section id="projects">
-        <p class="section__text__p1">Browse some of my</p>
-        <h1 class="title">Projects</h1>
-        <br>
-        <p class="section__text__p1">You can find more in my Github</p>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/portfolioSS.webp"
-                  alt="This portfolio as a project"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Personal Portfolio</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="openLink('https://github.com/cesarocbu/portfolio')"
-                >
-                  Github
-                </button>
-              </div>
+      </div>
+      <img src="./assets/arrow.webp" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects" class="fade-in">
+      <p class="section__text__p1">Browse some of my</p>
+      <h1 class="title">Projects</h1>
+      <br>
+      <p class="section__text__p1">You can find more in my Github</p>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/portfolioSS.webp" alt="This portfolio as a project" class="project-img" />
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/pomodoroSS.webp"
-                  alt="Simple Pomodoro timer app"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Simple Pomodoro Timer</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="openLink('https://github.com/cesarocbu/pomodoroTimer')"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="openLink('https://cesarocbu.github.io/pomodoroTimer/')"
-                >
-                  Live Demo
-                </button>
-              </div>
+            <h2 class="experience-sub-title project-title">Personal Portfolio</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openLink('https://github.com/cesarocbu/portfolio')">
+                Github
+              </button>
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/storeSS.webp"
-                  alt="Picture of the Online Store project"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Online store example (course)</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="openLink('https://github.com/cesarocbu/curso-frontend-developer-JSpractico')"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="openLink('https://cesarocbu.github.io/curso-frontend-developer-JSpractico/')"
-                >
-                  Live Demo
-                </button>
-              </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/pomodoroSS.webp" alt="Simple Pomodoro timer app" class="project-img" />
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/weatherAppSS.jpg"
-                  alt="Weather App"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Weather App</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="openLink('https://github.com/cesarocbu/weather-app')"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="openLink('https://weatherapp-cesarocbu.netlify.app/')"
-                >
-                  Live Demo
-                </button>
-              </div>
+            <h2 class="experience-sub-title project-title">Simple Pomodoro Timer</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="openLink('https://github.com/cesarocbu/pomodoroTimer')">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="openLink('https://cesarocbu.github.io/pomodoroTimer/')">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/storeSS.webp" alt="Picture of the Online Store project" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Online store example (course)</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="openLink('https://github.com/cesarocbu/curso-frontend-developer-JSpractico')">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="openLink('https://cesarocbu.github.io/curso-frontend-developer-JSpractico/')">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/weatherAppSS.jpg" alt="Weather App" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Weather App</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="openLink('https://github.com/cesarocbu/weather-app')">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn"
+                onclick="openLink('https://weatherapp-cesarocbu.netlify.app/')">
+                Live Demo
+              </button>
             </div>
           </div>
         </div>
-        <img
-          src="./assets/arrow.webp"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-        />
-      </section>
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.webp"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:cesar.ocbu@gmail.com" target="_blank">cesar.ocbu@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.webp"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/cesarocbu/" target="_blank">LinkedIn</a></p>
-          </div>
+      </div>
+      <img src="./assets/arrow.webp" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact" class="fade-in">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.webp" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:cesar.ocbu@gmail.com" target="_blank">cesar.ocbu@gmail.com</a></p>
         </div>
-      </section>
-      <footer>
-        <div class="footer-container">
-          <nav class="footer">
-            <div class="nav-links-container">
-              <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
-          <div class="footer-info">
-            <p>I'm still working on this portfolio. If you've seen a bug, report it <a href="mailto:cesar.ocbu@gmail.com" target="_blank"><strong>here.</strong></a></p>
-            <p>2025 - Cesar Ochoa </p>
-            <p class="credits">Design by: <a href="https://github.com/Ade-mir" target="_blank">Ademir</a></p>
-          </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.webp" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/cesarocbu/" target="_blank">LinkedIn</a></p>
         </div>
-      </footer>
-      <script src="script.js"></script>
-      <script src="particles.min.js"></script>
-      <script src="particlesjs-config.json"></script>
-    </main>
-    </body>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <nav class="footer">
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer-info">
+          <p>I'm still working on this portfolio. If you've seen a bug, report it <a href="mailto:cesar.ocbu@gmail.com"
+              target="_blank"><strong>here.</strong></a></p>
+          <p>2024 - Cesar Ochoa </p>
+          <p class="credits">Design by: <a href="https://github.com/Ade-mir" target="_blank">Ademir</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="particles.min.js"></script>
+    <script src="particlesjs-config.json"></script>
+  </main>
+</body>
+
 </html>

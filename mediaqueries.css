@@ -48,7 +48,7 @@
     height: fit-content;
   }
   section {
-    margin: 0 5%;
+    margin: 0 5% 4rem 5%;
   }
   .section__pic-container {
     width: 275px;
@@ -56,7 +56,7 @@
     margin: 0 auto 2rem;
   }
   .about-containers {
-    margin-top: 0;
+    margin-top: 2rem;
   }
   .nav-links{
     display: flex;
@@ -68,10 +68,12 @@
 @media screen and (max-width: 800px) {
   #contact,
   footer {
-    height: 40vh;
+    min-height: 40vh;
+    height: fit-content;
   }
   #profile {
-    height: 80vh;
+    min-height: 80vh;
+    height: fit-content;
     margin-bottom: 0;
   }
   article {
@@ -109,14 +111,15 @@
   }
   .nav-links a{
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     height: 1rem;
     margin: 0;
   }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
+    width: 275px;
+    height: 275px;
     justify-content: center;
+    margin: 0 auto;
   }
   .section__text__p2 {
     font-size: 1.25rem;
