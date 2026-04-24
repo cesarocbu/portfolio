@@ -39,6 +39,7 @@
   .section__text{
     display: flex;
     flex-direction: column;
+    width: auto;
   }
   .arrow {
     display: none;
