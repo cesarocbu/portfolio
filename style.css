@@ -36,6 +36,10 @@ body.dark-mode .icon {
   filter: invert(1);
 }
 
+body.dark-mode .icon.svg-icon {
+  filter: none;
+}
+
 body.dark-mode .article-container .icon {
   filter: none;
 }
